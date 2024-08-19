@@ -17,11 +17,23 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="flex justify-between p-5">
+    <nav class="p-5 flex justify-between items-center">
         <div class="font-semibold text-xl">
             QR Code Generator
         </div>
-        <div class="right flex gap-4 text-blue-700">
+        <!-- Hamburger Icon -->
+        <div class="md:hidden">
+            <button id="menu-button" class="text-blue-700 focus:outline-none">
+                <!-- Hamburger Icon (3 bars) -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-4 text-blue-700">
             <a href="index.html" class="hover:underline">Home</a>
             <a href="#" class="hover:underline">About</a>
             <a href="#" class="hover:underline">Products</a>
@@ -29,6 +41,16 @@
             <a href="#" class="bg-blue-700 text-white rounded-xl px-2">FAQ</a>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 text-blue-700 p-5">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Products</a>
+        <a href="#" class="hover:underline">Contact</a>
+        <a href="#" class="hover:underline">FAQ</a>
+    </div>
+
 
     <!-- Header -->
     <header class="flex flex-col items-center justify-center gap-10 pt-20 text-center">
@@ -109,6 +131,19 @@
             });
         }
     </script>
+
+
+    <!-- JavaScript for Hamburger Menu Toggle -->
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex'); // Add the flex class when visible
+        });
+    </script>
+
 
 </body>
 
