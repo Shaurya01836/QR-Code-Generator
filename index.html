@@ -18,8 +18,27 @@
 
     <!-- Navigation -->
     <nav class="p-5 flex justify-between items-center">
-        <div class="font-semibold text-xl">
-            QR Code Generator
+        <div class="flex items-center justify-center gap-2 font-semibold text-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                fill="none">
+                <path
+                    d="M3 6C3 4.58579 3 3.87868 3.43934 3.43934C3.87868 3 4.58579 3 6 3C7.41421 3 8.12132 3 8.56066 3.43934C9 3.87868 9 4.58579 9 6C9 7.41421 9 8.12132 8.56066 8.56066C8.12132 9 7.41421 9 6 9C4.58579 9 3.87868 9 3.43934 8.56066C3 8.12132 3 7.41421 3 6Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                <path
+                    d="M3 18C3 16.5858 3 15.8787 3.43934 15.4393C3.87868 15 4.58579 15 6 15C7.41421 15 8.12132 15 8.56066 15.4393C9 15.8787 9 16.5858 9 18C9 19.4142 9 20.1213 8.56066 20.5607C8.12132 21 7.41421 21 6 21C4.58579 21 3.87868 21 3.43934 20.5607C3 20.1213 3 19.4142 3 18Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                <path d="M3 12L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M12 3V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M15 6C15 4.58579 15 3.87868 15.4393 3.43934C15.8787 3 16.5858 3 18 3C19.4142 3 20.1213 3 20.5607 3.43934C21 3.87868 21 4.58579 21 6C21 7.41421 21 8.12132 20.5607 8.56066C20.1213 9 19.4142 9 18 9C16.5858 9 15.8787 9 15.4393 8.56066C15 8.12132 15 7.41421 15 6Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                <path
+                    d="M21 12H15C13.5858 12 12.8787 12 12.4393 12.4393C12 12.8787 12 13.5858 12 15M12 17.7692V20.5385M15 15V16.5C15 17.9464 15.7837 18 17 18C17.5523 18 18 18.4477 18 19M16 21H15M18 15C19.4142 15 20.1213 15 20.5607 15.44C21 15.8799 21 16.5881 21 18.0043C21 19.4206 21 20.1287 20.5607 20.5687C20.24 20.8898 19.7767 20.9766 19 21"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+            <p>QR Code Generator</p>
         </div>
         <!-- Hamburger Icon -->
         <div class="md:hidden">
@@ -34,26 +53,22 @@
         </div>
         <!-- Desktop Menu -->
         <div class="hidden md:flex gap-4 text-blue-700">
-            <a href="index.html" class="hover:underline">Home</a>
-            <a href="#" class="hover:underline">About</a>
-            <a href="#" class="hover:underline">Products</a>
+            <a href="#features" class="hover:underline">Features</a>
+            <a href="#" class="hover:underline">Pricing</a>
             <a href="#" class="hover:underline">Contact</a>
-            <a href="#" class="bg-blue-700 text-white rounded-xl px-2">FAQ</a>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 text-blue-700 p-5">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="#" class="hover:underline">About</a>
-        <a href="#" class="hover:underline">Products</a>
+        <a href="#features" class="hover:underline">Features</a>
+        <a href="#" class="hover:underline">Pricing</a>
         <a href="#" class="hover:underline">Contact</a>
-        <a href="#" class="hover:underline">FAQ</a>
     </div>
 
 
     <!-- Header -->
-    <header class="flex flex-col items-center justify-center gap-10 pt-20 text-center">
+    <header class="flex flex-col items-center justify-center gap-10 py-20 text-center">
         <h1 class="text-6xl font-bold text-blue-700">Generate QR Code from</h1>
         <p class="text-2xl font-semibold">Create Unique QR Codes with Customization</p>
         <p class="text-2xl font-normal w-4/5 md:w-2/3 lg:w-1/2">
@@ -67,82 +82,120 @@
     </header>
 
     <!-- Main Content Section -->
-    <section class="flex flex-col items-center justify-center gap-10 pt-40">
-        <div class="flex flex-col items-center justify-center gap-4 text-center">
-            <h2 class="text-4xl font-semibold">Transform Your Marketing with Personalized QR Codes</h2>
-            <p class="text-2xl font-normal text-gray-900 w-4/5 md:w-3/5">
-                Unlock new opportunities for your business with our versatile QR Code Generator.
-            </p>
-        </div>
-        <div class="flex items-center justify-center gap-10 flex-wrap">
-            <img class="rounded-xl w-80 h-80 object-cover" src="qr code.png" alt="QR Code 1">
-            <img class="rounded-xl w-80 h-80 object-cover" src="qr code1.png" alt="QR Code 2">
-            <img class="rounded-xl w-80 h-80 object-cover"
-                src="https://images.unsplash.com/photo-1706759755851-6163305080f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXIlMjBjb2RlJTIwZ2VuZXJhdG9yfGVufDB8fDB8fHww"
-                alt="QR Code 3">
+    <section class="bg-slate-50 p-20" id="features">
+        <div class="flex items-center justify-center gap-10 ">
+            <div class="flex flex-col gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" color="#0074fe"
+                    fill="none">
+                    <path
+                        d="M3 6C3 4.58579 3 3.87868 3.43934 3.43934C3.87868 3 4.58579 3 6 3C7.41421 3 8.12132 3 8.56066 3.43934C9 3.87868 9 4.58579 9 6C9 7.41421 9 8.12132 8.56066 8.56066C8.12132 9 7.41421 9 6 9C4.58579 9 3.87868 9 3.43934 8.56066C3 8.12132 3 7.41421 3 6Z"
+                        stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M3 18C3 16.5858 3 15.8787 3.43934 15.4393C3.87868 15 4.58579 15 6 15C7.41421 15 8.12132 15 8.56066 15.4393C9 15.8787 9 16.5858 9 18C9 19.4142 9 20.1213 8.56066 20.5607C8.12132 21 7.41421 21 6 21C4.58579 21 3.87868 21 3.43934 20.5607C3 20.1213 3 19.4142 3 18Z"
+                        stroke="currentColor" stroke-width="1.5" />
+                    <path d="M3 12L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M12 3V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M15 6C15 4.58579 15 3.87868 15.4393 3.43934C15.8787 3 16.5858 3 18 3C19.4142 3 20.1213 3 20.5607 3.43934C21 3.87868 21 4.58579 21 6C21 7.41421 21 8.12132 20.5607 8.56066C20.1213 9 19.4142 9 18 9C16.5858 9 15.8787 9 15.4393 8.56066C15 8.12132 15 7.41421 15 6Z"
+                        stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M21 12H15C13.5858 12 12.8787 12 12.4393 12.4393C12 12.8787 12 13.5858 12 15M12 17.7692V20.5385M15 15V16.5C15 17.9464 15.7837 18 17 18C17.5523 18 18 18.4477 18 19M16 21H15M18 15C19.4142 15 20.1213 15 20.5607 15.44C21 15.8799 21 16.5881 21 18.0043C21 19.4206 21 20.1287 20.5607 20.5687C20.24 20.8898 19.7767 20.9766 19 21"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <p class="text-2xl font-semibold">Easy to Use</p>
+                <p class="text-xl font-normal text-slate-700">Our QR code generator is simple and intuitive, making it
+                    easy to create
+                    high-quality QR codes in seconds.</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" color="#0074fe"
+                    fill="none">
+                    <path
+                        d="M12 14.5L12 4.5M12 14.5C11.2998 14.5 9.99153 12.5057 9.5 12M12 14.5C12.7002 14.5 14.0085 12.5057 14.5 12"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20 16.5C20 18.982 19.482 19.5 17 19.5H7C4.518 19.5 4 18.982 4 16.5" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p class="text-2xl font-semibold">Download and Share</p>
+                <p class="text-xl font-normal text-slate-700">Once you've generated your QR code, you can download it as
+                    an image and
+                    share it with your audience.</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" color="#0074fe"
+                    fill="none">
+                    <path
+                        d="M4 2V4M22 20H20M16.5 20H10C7.17157 20 5.75736 20 4.87868 19.1213C4 18.2426 4 16.8284 4 14V7.5"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20 22L20 12C20 8.22877 20 6.34315 18.8284 5.17158C17.6569 4 15.7712 4 12 4L2 4"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p class="text-2xl font-semibold">Customizable</p>
+                <p class="text-xl font-normal text-slate-700">Customize your QR codes with your own branding, colors,
+                    and designs to
+                    make them stand out.</p>
+            </div>
         </div>
     </section>
 
-    <article id="QR" class="flex flex-col md:flex-row items-center justify-center gap-52 pt-40">
-        <div class="mt-8 flex flex-col gap-10">
-            <input id="linkInput"
-                class="bg-blue-400 border border-blue-700 rounded-lg px-4 py-2 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-700"
-                type="text" placeholder="Paste your link here">
-            <button onclick="generateQRCode()" class="bg-blue-700 text-white px-6 py-3 rounded-xl">
-                Generate QR Code
-            </button>
+    <article id="QR" class="flex flex-col lg:flex-row items-center justify-between p-8 lg:p-20 bg-blue-50">
+        <div class="flex flex-col gap-6 w-full lg:w-3/6 mb-8 lg:mb-0">
+            <p class="text-4xl font-bold text-blue-900">Generate QR Codes Easily</p>
+            <p class="text-xl font-normal ">Create high-quality QR codes for your business, website, or personal use.
+                Simply enter your text or URL, and download the QR code image.</p>
+            <p class="text-xl font-semibold ">Enter Text or URL</p>
+            <input type="text" placeholder="https://example.com"
+                class="p-3 border-2 border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <button
+                class="mt-4 bg-blue-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Generate
+                QR Code</button>
         </div>
-        <div class="" id="qrCodeContainer">
-            <img class="rounded-xl w-80 h-80 object-cover" src="Untitled 1.png" alt="" id="qrCodeImage">
+        <div class="flex flex-col items-center">
+            <img class="h-72 w-72 mb-4" src="Resources/Untitled 1.png" alt="Generated QR Code">
+            <div class="flex gap-4">
+                <button
+                    class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Download</button>
+                <button
+                    class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Share</button>
+            </div>
         </div>
     </article>
 
 
-    <!-- Bottom Gradient Background -->
-    <div class="relative inset-x-0 mt-20 transform-gpu blur-3xl overflow-hidden" aria-hidden="true">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 aspect-[1155/678] w-[36.125rem] bg-gradient-to-tr from-[#000000] to-[#000000] opacity-30 sm:w-[72.1875rem]"
-            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);">
-        </div>
-    </div>
 
+
+    <!-- footer starts from here  -->
     <footer class="bg-blue-700 text-white py-4">
-        <div class="text-center text-sm">
-            © 2024 QR Code Generator. All rights reserved.
+        <div class="flex items-center justify-between text-sm px-5">
+            <div class="flex gap-2  ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffff"
+                    fill="none">
+                    <path
+                        d="M3 6C3 4.58579 3 3.87868 3.43934 3.43934C3.87868 3 4.58579 3 6 3C7.41421 3 8.12132 3 8.56066 3.43934C9 3.87868 9 4.58579 9 6C9 7.41421 9 8.12132 8.56066 8.56066C8.12132 9 7.41421 9 6 9C4.58579 9 3.87868 9 3.43934 8.56066C3 8.12132 3 7.41421 3 6Z"
+                        stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M3 18C3 16.5858 3 15.8787 3.43934 15.4393C3.87868 15 4.58579 15 6 15C7.41421 15 8.12132 15 8.56066 15.4393C9 15.8787 9 16.5858 9 18C9 19.4142 9 20.1213 8.56066 20.5607C8.12132 21 7.41421 21 6 21C4.58579 21 3.87868 21 3.43934 20.5607C3 20.1213 3 19.4142 3 18Z"
+                        stroke="currentColor" stroke-width="1.5" />
+                    <path d="M3 12L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M12 3V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M15 6C15 4.58579 15 3.87868 15.4393 3.43934C15.8787 3 16.5858 3 18 3C19.4142 3 20.1213 3 20.5607 3.43934C21 3.87868 21 4.58579 21 6C21 7.41421 21 8.12132 20.5607 8.56066C20.1213 9 19.4142 9 18 9C16.5858 9 15.8787 9 15.4393 8.56066C15 8.12132 15 7.41421 15 6Z"
+                        stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M21 12H15C13.5858 12 12.8787 12 12.4393 12.4393C12 12.8787 12 13.5858 12 15M12 17.7692V20.5385M15 15V16.5C15 17.9464 15.7837 18 17 18C17.5523 18 18 18.4477 18 19M16 21H15M18 15C19.4142 15 20.1213 15 20.5607 15.44C21 15.8799 21 16.5881 21 18.0043C21 19.4206 21 20.1287 20.5607 20.5687C20.24 20.8898 19.7767 20.9766 19 21"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <p>QR Code Generator</p>
+            </div>
+            <div class="text-center text-sm">© 2024 QR Code Generator. All rights reserved.</div>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <script>
-        function generateQRCode() {
-            const input = document.getElementById('linkInput').value;
-            const qrCodeContainer = document.getElementById('qrCodeContainer');
-
-            // Clear any previous QR code
-            qrCodeContainer.innerHTML = '';
-
-            // Generate new QR code
-            const qrcode = new QRCode(qrCodeContainer, {
-                text: input,
-                width: 320,
-                height: 320,
-                colorDark: "#000000",
-                colorLight: "#ffffff",
-                correctLevel: QRCode.CorrectLevel.H
-            });
-        }
-    </script>
-
-
-    <!-- JavaScript for Hamburger Menu Toggle -->
-    <script>
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('flex'); // Add the flex class when visible
-        });
-    </script>
+    <script src="js/script.js"></script>
 
 
 </body>
