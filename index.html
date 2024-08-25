@@ -17,7 +17,7 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="p-5 flex justify-between items-center">
+    <nav class="p-5 flex justify-between items-center ">
         <div class="flex items-center justify-center gap-2 font-semibold text-xl">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
                 fill="none">
@@ -54,7 +54,7 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex gap-4 text-blue-700">
             <a href="#features" class="hover:underline">Features</a>
-            <a href="#" class="hover:underline">Pricing</a>
+            <a href="#pricing" class="hover:underline">Pricing</a>
             <a href="#" class="hover:underline">Contact</a>
         </div>
     </nav>
@@ -62,7 +62,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 text-blue-700 p-5">
         <a href="#features" class="hover:underline">Features</a>
-        <a href="#" class="hover:underline">Pricing</a>
+        <a href="#pricing" class="hover:underline">Pricing</a>
         <a href="#" class="hover:underline">Contact</a>
     </div>
 
@@ -163,7 +163,48 @@
         </div>
     </article>
 
-
+    <section id="pricing" class="flex flex-col md:flex-row items-center justify-between p-10 md:p-20 bg-white">
+        <div class="flex flex-col gap-6 md:gap-8 text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-bold">Pricing that fits your needs</h2>
+            <p class="text-lg md:text-xl text-gray-700">Choose the plan that works best for you, whether you're an
+                individual or a business.</p>
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Free Plan -->
+                <article class="border rounded-xl p-6 md:w-80 bg-gray-50 shadow-md">
+                    <p class="text-lg md:text-xl font-semibold">Free</p>
+                    <p class="text-3xl md:text-4xl font-bold mt-2">$0</p>
+                    <p class="text-lg text-gray-700 mt-2">per month</p>
+                    <ul class="text-lg text-gray-700 mt-4 space-y-2">
+                        <li>Generate up to 10 QR codes</li>
+                        <li>Download QR codes as PNG</li>
+                        <li>Basic customization</li>
+                    </ul>
+                    <button
+                        class="mt-6 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                        Get Started
+                    </button>
+                </article>
+                <!-- Pro Plan -->
+                <article class="border rounded-xl p-6 md:w-80 bg-gray-50 shadow-md">
+                    <p class="text-lg md:text-xl font-semibold">Pro</p>
+                    <p class="text-3xl md:text-4xl font-bold mt-2">$9</p>
+                    <p class="text-lg text-gray-700 mt-2">per month</p>
+                    <ul class="text-lg text-gray-700 mt-4 space-y-2">
+                        <li>Generate unlimited QR codes</li>
+                        <li>Download QR codes as PNG, SVG, and EPS</li>
+                        <li>Advanced customization</li>
+                    </ul>
+                    <button
+                        class="mt-6 py-2 px-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                        Get Started
+                    </button>
+                </article>
+            </div>
+        </div>
+        <div class="mt-10 md:mt-0">
+            <img class="h-64 rounded-xl md:h-96 mx-auto md:mx-0" src="Resources/Pricing.png" alt="Pricing Image" />
+        </div>
+    </section>
 
 
     <!-- footer starts from here  -->
