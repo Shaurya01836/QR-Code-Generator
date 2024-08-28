@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generator</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="Resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Resources/favicon-16x16.png">
+    <link rel="manifest" href="Resources/site.webmanifest">
+    <link rel="mask-icon" href="Resources/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -146,18 +153,18 @@
             <p class="text-xl font-normal ">Create high-quality QR codes for your business, website, or personal use.
                 Simply enter your text or URL, and download the QR code image.</p>
             <p class="text-xl font-semibold ">Enter Text or URL</p>
-            <input type="text" placeholder="https://example.com"
+            <input id="qrInput" type="text" placeholder="https://example.com"
                 class="p-3 border-2 border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
-            <button
+            <button id="generateBtn"
                 class="mt-4 bg-blue-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Generate
                 QR Code</button>
         </div>
-        <div class="flex flex-col items-center">
-            <img class="h-72 w-72 mb-4" src="Resources/Untitled 1.png" alt="Generated QR Code">
+        <div id="qrResult" class="flex flex-col items-center">
+            <img id="qrImage" class="h-auto w-auto mb-4 object-cover" src="Resources/frame.png" alt="Generated QR Code">
             <div class="flex gap-4">
-                <button
+                <button id="downloadBtn"
                     class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Download</button>
-                <button
+                <button id="shareBtn"
                     class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Share</button>
             </div>
         </div>
@@ -235,7 +242,7 @@
             <div class="text-center text-sm">© 2024 QR Code Generator. All rights reserved.</div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
     <script src="js/script.js"></script>
 
 
